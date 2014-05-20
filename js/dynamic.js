@@ -25,6 +25,21 @@
 	$('table.result .favorite .add').bind('click', function() {
 		$(this).toggleClass('active');
 	});
+	
+	$('.apartment').each(function() {
+
+		var gallery = $(this).find('.gallery div img');
+		if ( gallery.size() > 1 ) {
+			$(this).find('.gallery ul li a').bind('click', function () {
+				gallery.hide();
+				gallery.filter(this.hash).stop(true, true).fadeIn(250);
+				return false;
+			}).filter(':first').click();
+		}
+	
+	});
+	
+	
 	$('input, textarea').each(function () {
 		$(this).data('holder',$(this).attr('placeholder'));
 		$(this).focusin(function(){

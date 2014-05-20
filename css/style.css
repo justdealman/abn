@@ -119,7 +119,7 @@ ol li {
 	padding:0 0 0 16px;
 }
 input, select, textarea {
-	color:#153330;
+	color:#333333;
 	font-size:12px;
     font-family:'Arial', sans-serif;
 	padding:0;
@@ -480,13 +480,36 @@ button::-moz-focus-inner {
 /* Inner */
 
 .content {
-	width:980px;
-	margin:0 auto 50px;
+	width:960px;
+	padding:0 10px;
+	margin:25px auto 50px;
+}
+.content > p {
+	color:#333333;
+	line-height:20px;
+	margin:0 0 20px;
+}
+.content > ul {
+	margin:0 0 20px 20px;
+}
+.content > ul li {
+	line-height:20px;
+	font-style:italic;
+	padding:0 0 0 15px;
+	background:url('../img/ul_li.png') no-repeat left 10px;
+}
+.content > h6 {
+	color:#333333;
+	font-size:12px;
+	line-height:20px;
+	font-weight:normal;
+	padding:0;
+	margin:0;
 }
 .largefilter {
 	position:relative;
 	width:980px;
-	margin:-5px auto 14px;
+	margin:-30px auto 14px -10px;
 	background:url('../img/largefilter_bg.jpg') no-repeat left top;
 	-webkit-box-shadow:0 10px 20px rgba(0,0,0,0.15);
 	-moz-box-shadow:0 10px 20px rgba(0,0,0,0.15);
@@ -643,8 +666,8 @@ button::-moz-focus-inner {
 	background-position:0 -28px;
 }
 table.result {
-	width:100%;
-	margin:0 0 27px;
+	width:980px;
+	margin:0 0 27px -10px;
 }
 table.result th {
 	color:#153330;
@@ -738,9 +761,11 @@ table.result .balcony {
 .pages li {
 	display:inline-block;
 	font-size:12px;
-	line-height:14px;
+	line-height:14px !important;
+	font-style:normal !important;
 	margin:0 -3px 0 0;
-	padding:2px 6px 2px 5px;
+	padding:2px 6px 2px 5px !important;
+	background:none !important;
 }
 .pages li a {
 	display:block;
@@ -752,16 +777,381 @@ table.result .balcony {
 }
 .pages li.active {
 	padding:0;
-	margin:0 0 0 3px;
 }
 .pages li.active a {
 	position:relative;
 	color:#ffffff;
+	text-decoration:none !important;
 	padding:2px 6px 2px 5px;
 	background:#73231c;
 	-webkit-border-radius:2px;
 	-moz-border-radius:2px;
 	border-radius:2px;
+}
+.content h1 {
+	color:#000000;
+	font-size:24px;
+	line-height:29px;
+	font-family:'Segoe UI', sans-serif;
+	padding:0;
+	margin:0 0 24px;
+}
+.content .back {
+	float:right;
+	padding:0 15px 0 0;
+	margin:6px 0 0 20px;
+	background:url('../img/back_icon.png') no-repeat right 5px;
+}
+.apartment .gallery {
+	display:inline-block;
+	width:322px;
+	vertical-align:top;
+	margin:2px 37px 0 0;
+}
+.apartment .gallery > div {
+	margin:0 0 11px;
+}
+.apartment .gallery > div img {
+	position:relative;
+	max-width:316px;
+	margin:0 0 -4px;
+	border:2px solid #ffffff;
+	-webkit-box-shadow:0 10px 20px rgba(0,0,0,0.15);
+	-moz-box-shadow:0 10px 20px rgba(0,0,0,0.15);
+	box-shadow:0 10px 20px rgba(0,0,0,0.15);
+	behavior:url('./pie.htc');
+}
+.apartment .gallery ul {
+	clear:both;
+	overflow:hidden;
+	width:332px;
+	margin:0 0 20px;
+}
+.apartment .gallery ul li {
+	float:left;
+	width:80px;
+	height:58px;
+}
+.apartment .gallery ul li a {
+	display:block;
+	padding:1px;
+	background:#ffffff;
+	border:1px solid #d9dada;
+}
+.apartment .gallery ul li img {
+	margin:0 0 -4px;
+}
+.apartment .information {
+	display:inline-block;
+	width:598px;
+	vertical-align:top;
+	margin:2px -3px 0 0;
+}
+.apartment .information .data {
+	display:inline-block;
+	width:250px;
+	vertical-align:top;
+	margin:0 25px 0 0;
+}
+.apartment .information .data h3 {
+	position:relative;
+	display:inline-block;
+	min-width:187px;
+	color:#000000;
+	font-size:24px;
+	line-height:28px;
+	font-family:'Segoe UI', sans-serif;
+	padding:4px 12px 8px;
+	margin:0 0 24px -12px;
+	background:#d9dada;
+}
+.apartment .information .data h3:before {
+	content:"";
+	position:absolute;
+	left:-10px;
+	top:0;
+	border-right:10px solid #d9dada;
+	border-top:20px solid transparent;
+	border-bottom:20px solid transparent;
+}
+.apartment .information .data table {
+	max-width:250px;
+	font-family:'Segoe UI', sans-serif;
+	margin:0 0 15px;
+}
+.apartment .information .data table th {
+	color:#000000;
+	font-size:16px;
+	line-height:20px;
+	font-weight:300;
+	text-align:left;
+	white-space:nowrap;
+	vertical-align:top;
+	padding:0 0 9px;
+}
+.apartment .information .data table td {
+	color:#000000;
+	font-size:16px;
+	line-height:20px;
+	font-weight:600;
+	vertical-align:top;
+	padding:0 0 9px 8px;
+}
+.apartment .information .controls {
+	display:inline-block;
+	width:320px;
+	vertical-align:top;
+	margin:0 -3px 0 0;
+}
+.apartment .information .controls ul {
+	clear:both;
+	overflow:hidden;
+	margin:12px 0 28px;
+}
+.apartment .information .controls ul li {
+	float:left;
+	font-size:12px;
+	line-height:14px;
+	width:140px;
+	margin:0 20px 10px 0;
+}
+.apartment .information .controls ul li a {
+	display:inline-block;
+	color:#73231c;
+	text-decoration:none;
+	padding:0 0 3px;
+}
+.apartment .information .controls ul li a:hover {
+	color:#a07d33;
+}
+.apartment .information .controls ul li.favorite a {
+	padding-left:28px;
+	background:url('../img/favorite_icon_small.png') no-repeat left top;
+}
+.apartment .information .controls ul li.favorite a:hover {
+	background-position:0 -17px;
+}
+.apartment .information .controls ul li.print a {
+	padding-left:24px;
+	background:url('../img/print_icon.png') no-repeat left 1px;
+}
+.apartment .information .controls ul li.print a:hover {
+	background-position:0 -16px;
+}
+.apartment .information .controls > div {
+	position:relative;
+	height:210px;
+	margin:0 0 24px;
+	background:#d9dada;
+	border:2px solid #ffffff;
+	-webkit-box-shadow:0 10px 20px rgba(0,0,0,0.15);
+	-moz-box-shadow:0 10px 20px rgba(0,0,0,0.15);
+	box-shadow:0 10px 20px rgba(0,0,0,0.15);
+	behavior:url('./pie.htc');
+}
+.apartment .information .description {
+	margin:8px 0 24px;
+}
+.apartment .information .description p {
+	color:#333333;
+	font-size:12px;
+	line-height:20px;
+	margin:0 0 20px;
+}
+.apartment .information .description > div {
+	height:38px;
+	padding:2px 0 0;
+	margin:0 0 24px;
+}
+.apartment .information .description > div p {
+	display:inline-block;
+	vertical-align:top;
+	margin:9px -3px 11px 50px;
+}
+.apartment .information .description > div :first-child {
+	margin-left:0;
+}
+.apartment .information .description > div button {
+	position:relative;
+	float:right;
+	display:inline-block;
+	color:#ffffff;
+	font-size:14px;
+	line-height:18px;
+	font-weight:300;
+	font-family:'Segoe UI', sans-serif;
+	text-transform:uppercase;
+	text-shadow:1px 1px 0 rgba(149,113,40,0.5);
+	cursor:pointer;
+	padding:5px 27px 5px 26px;
+	margin:0 -5px 24px 0;
+	background:url('../img/filter_button.png') repeat-x top;
+	border:5px solid #d9dada;
+	-webkit-border-radius:11px;
+	-moz-border-radius:11px;
+	border-radius:11px;
+	behavior:url('./pie.htc');
+}
+.apartment .information .description > div button:hover {
+	background-position:0 -28px;
+}
+.review {
+	margin:28px 0 50px;
+}
+.review > div {
+	margin:0 0 20px;
+}
+.review > div h5 {
+	display:inline-block;
+	width:148px;
+	color:#333333;
+	font-size:14px;
+	line-height:18px;
+	font-weight:normal;
+	font-family:'Segoe UI', sans-serif;
+	vertical-align:top;
+	margin:16px 9px 18px 0;
+}
+.review > div > div {
+	position:relative;
+	display:inline-block;
+	width:760px;
+	padding:16px 20px;
+	margin:0 -3px 0 0;
+	background:#ffffff;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+	-webkit-box-shadow:0 10px 20px rgba(0,0,0,0.15);
+	-moz-box-shadow:0 10px 20px rgba(0,0,0,0.15);
+	box-shadow:0 10px 20px rgba(0,0,0,0.15);
+	behavior:url('./pie.htc');
+}
+.review > div > div p {
+	color:#333333;
+	line-height:20px;
+	margin:0;
+}
+.form {
+	margin:0 0 24px;
+}
+.form p {
+	margin:0 0 9px;
+}
+.form p span {
+	display:inline-block;
+	width:148px;
+	color:#333333;
+	font-size:14px;
+	line-height:18px;
+	font-weight:normal;
+	font-family:'Segoe UI', sans-serif;
+	vertical-align:top;
+	margin:1px 9px 2px 0;
+}
+.form p input, .form p textarea {
+	width:790px;
+	padding:2px 4px;
+	background:#ffffff;
+	border:1px solid #203d3a;
+}
+.form p textarea {
+	margin:0 0 -4px;
+	resize:vertical;
+}
+.form button {
+	position:relative;
+	display:inline-block;
+	color:#ffffff;
+	font-size:14px;
+	line-height:18px;
+	font-weight:300;
+	font-family:'Segoe UI', sans-serif;
+	text-transform:uppercase;
+	text-shadow:1px 1px 0 rgba(149,113,40,0.5);
+	cursor:pointer;
+	padding:5px 31px 5px 30px;
+	margin:10px 0 24px 160px;
+	background:url('../img/filter_button.png') repeat-x top;
+	border:5px solid #ebeff0;
+	-webkit-border-radius:11px;
+	-moz-border-radius:11px;
+	border-radius:11px;
+	behavior:url('./pie.htc');
+}
+.form button:hover {
+	background-position:0 -28px;
+}
+.content img.left {
+	float:left;
+	margin:5px 40px 15px 0;
+}
+.content img.right {
+	float:right;
+	margin:5px 0 15px 40px;
+}
+.new {
+	clear:both;
+	overflow:hidden;
+}
+.new h6 {
+	font-size:11px;
+	line-height:14px;
+	font-weight:normal;
+	margin:-9px 0 25px;
+}
+.new h6 span {
+	display:inline-block;
+	color:#ffffff;
+	padding:2px 11px;
+	background:#d7b56d;
+}
+.new p {
+	color:#333333;
+	line-height:20px;
+	margin:0 0 20px;
+}
+.news {
+	padding:12px 0 -6px;
+}
+.news > div {
+	clear:both;
+	overflow:hidden;
+	padding:0 0 0 200px;
+	margin:0 0 36px;
+}
+.news > div img {
+	float:left;
+	margin:0 0 12px -200px;
+}
+.news > div h6 {
+	font-size:11px;
+	line-height:14px;
+	font-weight:normal;
+	margin:0 0 12px;
+}
+.news > div span {
+	display:inline-block;
+	color:#ffffff;
+	padding:2px 11px;
+	background:#d7b56d;
+}
+.news > div h3 {
+	color:#333333;
+	font-size:16px;
+	line-height:24px;
+	font-weight:600;
+	font-family:'Segoe UI';
+	padding:0;
+	margin:0 0 6px;
+}
+.news > div h3 a {
+	color:#153330;
+}
+.news > div p {
+	color:#333333;
+	line-height:24px;
+	margin:0;
 }
 
 /* Footer */
