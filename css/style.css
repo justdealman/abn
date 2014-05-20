@@ -819,7 +819,6 @@ table.result .balcony {
 	-webkit-box-shadow:0 10px 20px rgba(0,0,0,0.15);
 	-moz-box-shadow:0 10px 20px rgba(0,0,0,0.15);
 	box-shadow:0 10px 20px rgba(0,0,0,0.15);
-	behavior:url('./pie.htc');
 }
 .apartment .gallery ul {
 	clear:both;
@@ -947,7 +946,6 @@ table.result .balcony {
 	-webkit-box-shadow:0 10px 20px rgba(0,0,0,0.15);
 	-moz-box-shadow:0 10px 20px rgba(0,0,0,0.15);
 	box-shadow:0 10px 20px rgba(0,0,0,0.15);
-	behavior:url('./pie.htc');
 }
 .apartment .information .description {
 	margin:8px 0 24px;
@@ -1025,7 +1023,6 @@ table.result .balcony {
 	-webkit-box-shadow:0 10px 20px rgba(0,0,0,0.15);
 	-moz-box-shadow:0 10px 20px rgba(0,0,0,0.15);
 	box-shadow:0 10px 20px rgba(0,0,0,0.15);
-	behavior:url('./pie.htc');
 }
 .review > div > div p {
 	color:#333333;
@@ -1111,32 +1108,32 @@ table.result .balcony {
 	line-height:20px;
 	margin:0 0 20px;
 }
-.news {
+.content .news {
 	padding:12px 0 -6px;
 }
-.news > div {
+.content .news > div {
 	clear:both;
 	overflow:hidden;
 	padding:0 0 0 200px;
 	margin:0 0 36px;
 }
-.news > div img {
+.content .news > div img {
 	float:left;
 	margin:0 0 12px -200px;
 }
-.news > div h6 {
+.content .news > div h6 {
 	font-size:11px;
 	line-height:14px;
 	font-weight:normal;
 	margin:0 0 12px;
 }
-.news > div span {
+.content .news > div span {
 	display:inline-block;
 	color:#ffffff;
 	padding:2px 11px;
 	background:#d7b56d;
 }
-.news > div h3 {
+.content .news > div h3 {
 	color:#333333;
 	font-size:16px;
 	line-height:24px;
@@ -1145,14 +1142,90 @@ table.result .balcony {
 	padding:0;
 	margin:0 0 6px;
 }
-.news > div h3 a {
+.content .news > div h3 a {
 	color:#153330;
 }
-.news > div p {
+.content .news > div p {
 	color:#333333;
 	line-height:24px;
 	margin:0;
 }
+.content .team {
+	width:964px;
+	margin:0 -14px 0 10px;
+}
+
+.content .team ul {
+	clear:both;
+	overflow:hidden;
+	margin:-3px 0 33px;
+}
+.content .team ul li {
+	float:left;
+	font-size:16px;
+	line-height:24px;
+	font-family:'Segoe UI', sans-serif;
+	padding:0 0 0 28px;
+	margin:0 0 0 21px;
+	background:url('../img/team_li.png') no-repeat left 6px;
+}
+.content .team ul li:first-child {
+	padding-left:0;
+	margin-left:0;
+	background:none;
+}
+.content .team ul li a {
+	color:#73231c;
+	text-decoration:none;
+	border-bottom:1px dashed #73231c;
+}
+.content .team ul li.active a {
+	color:#000000;
+	border-bottom-width:0;
+}
+.content .team > div > div {
+	display:inline-block;
+	width:140px;
+	padding:0 0 0 83px;
+	margin:0 15px 10px 0;
+}
+.content .team > div > div > div {
+	position:relative;
+	float:left;
+	width:68px;
+	height:92px;
+	padding:1px;
+	margin:0 0 10px -83px;
+	background:#ffffff;
+	border:3px solid #d9dada;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	border-radius:3px;
+	behavior:url('./pie.htc');
+}
+.content .team > div > div > div img {
+	width:68px;
+	height:92px;
+}
+.content .team h3 {
+	font-size:12px;
+	line-height:20px;
+	font-weight:normal;
+	padding:0;
+	margin:0 0 10px;
+}
+.content .team p {
+	line-height:20px;
+	margin:0 0 10px;
+}
+.content .team h5 {
+	color:#73231c;
+	font-size:12px;
+	line-height:20px;
+	padding:0;
+	margin:0 0 10px;
+}
+
 
 /* Footer */
 
@@ -1229,7 +1302,6 @@ table.result .balcony {
 	-webkit-box-shadow:0 10px 10px rgba(0,0,0,0.15);
 	-moz-box-shadow:0 10px 10px rgba(0,0,0,0.15);
 	box-shadow:0 10px 10px rgba(0,0,0,0.15);
-	behavior:url('./pie.htc');
 }
 .carousel .jcarousel-item > div a {
 	display:block;
