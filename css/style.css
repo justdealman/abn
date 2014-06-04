@@ -598,6 +598,18 @@ button::-moz-focus-inner {
 .largefilter > div > div > div .selectbox {
 	text-align:left;
 }
+.largefilter > div > div > div input {
+	width:191px;
+	color:#000000;
+	font-size:12px;
+	padding:2px 4px;
+	margin-right:-3px;
+	background:#fbfbfb;
+	border:1px solid #203d3a;
+}
+.largefilter > div > div > div input.short {
+	width:61px;
+}
 .largefilter > div > div > div p {
 	margin:0 0 19px;
 }
