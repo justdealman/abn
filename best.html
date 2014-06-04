@@ -1,0 +1,227 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Алтайское Бюро Недвижимости</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<link href="./css/style.css" rel="stylesheet" type="text/css" title="compact">
+	<link href="./css/uniform.css" rel="stylesheet" type="text/css" title="compact">
+	<script type="text/javascript" src="./js/jquery.js"></script>
+	<script type="text/javascript" src="./js/easing.js"></script>
+	<script type="text/javascript" src="./js/jcarousel.js"></script>
+	<script type="text/javascript" src="./js/selectbox.js"></script>
+	<script type="text/javascript" src="./js/uniform.js"></script>
+	<script type="text/javascript" src="./js/dynamic.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="header">
+			<a href="#"><img src="./img/logo.png" width="268" height="113" class="logo" alt=""></a>
+			<div class="phone">
+				<p>телефон для связи</p>
+				<h3>+7 (3852) <strong>25 34 70</strong></h3>
+			</div>
+			<button class="publish">Подать объявление</button>
+			<p class="favorite"><a href="#">Избранное</a></p>
+		</div>
+		<ul class="menu">
+			<li><a href="#">Каталог</a></li>
+			<li><a href="#">Услуги</a></li>
+			<li><a href="#">Военная ипотека</a></li>
+			<li><a href="#">Новости</a></li>
+			<li><a href="#">Статьи</a></li>
+			<li><a href="#">Сотрудники</a></li>
+			<li><a href="#">Вакансии</a></li>
+			<li><a href="#">Контакты</a></li>
+		</ul>
+		<div class="content">
+			<h1>Избранное</h1>
+			<table class="result">
+				<thead>
+					<tr>
+						<th class="photo"></th>
+						<th class="area">Район</th>
+						<th class="address">Адрес</th>
+						<th class="rooms">Комнат</th>
+						<th class="balcony">Балкон</th>
+						<th class="floor">Этаж</th>
+						<th class="walls">Тип стен</th>
+						<th class="layout">Планировки</th>
+						<th class="space">Площадь</th>
+						<th class="price">Стоимость</th>
+						<th class="favorite"></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="photo"><img src="./pic/result1.jpg" width="53" height="40" alt=""></td>
+						<td class="area">Железнодорожный</td>
+						<td class="address">С.Республик, 39а</td>
+						<td class="rooms">1</td>
+						<td class="balcony">6</td>
+						<td class="floor">5 / 12</td>
+						<td class="walls">Кирпич</td>
+						<td class="layout">Малосемейка</td>
+						<td class="space">35 / 30 / 6 м</td>
+						<td class="price">2100000 руб.</td>
+						<td class="favorite"><span class="add"></span></td>
+					</tr>
+					<tr>
+						<td class="photo"><img src="./pic/result0.jpg" width="53" height="40" alt=""></td>
+						<td class="area">Ленинский</td>
+						<td class="address">А.Петрова, 262</td>
+						<td class="rooms">4</td>
+						<td class="balcony">л/з</td>
+						<td class="floor">6 / 9</td>
+						<td class="walls">Панель</td>
+						<td class="layout">97 серия</td>
+						<td class="space">72 / 67 / 9 м<sup>2</sup></td>
+						<td class="price">3200000 руб.</td>
+						<td class="favorite"><span class="add"></span></td>
+					</tr>
+					<tr>
+						<td class="photo"><img src="./pic/result1.jpg" width="53" height="40" alt=""></td>
+						<td class="area">Железнодорожный</td>
+						<td class="address">С.Республик, 39а</td>
+						<td class="rooms">1</td>
+						<td class="balcony">6</td>
+						<td class="floor">5 / 12</td>
+						<td class="walls">Кирпич</td>
+						<td class="layout">Малосемейка</td>
+						<td class="space">35 / 30 / 6 м</td>
+						<td class="price">2100000 руб.</td>
+						<td class="favorite"><span class="add"></span></td>
+					</tr>
+					<tr>
+						<td class="photo"><img src="./pic/result1.jpg" width="53" height="40" alt=""></td>
+						<td class="area">Ленинский</td>
+						<td class="address">А.Петрова, 262</td>
+						<td class="rooms">4</td>
+						<td class="balcony">л/з</td>
+						<td class="floor">6 / 9</td>
+						<td class="walls">Панель</td>
+						<td class="layout">97 серия</td>
+						<td class="space">72 / 67 / 9 м<sup>2</sup></td>
+						<td class="price">3200000 руб.</td>
+						<td class="favorite"><span class="add"></span></td>
+					</tr>
+					<tr>
+						<td class="photo"><img src="./pic/result0.jpg" width="53" height="40" alt=""></td>
+						<td class="area">Железнодорожный</td>
+						<td class="address">С.Республик, 39а</td>
+						<td class="rooms">1</td>
+						<td class="balcony">6</td>
+						<td class="floor">5 / 12</td>
+						<td class="walls">Кирпич</td>
+						<td class="layout">Малосемейка</td>
+						<td class="space">35 / 30 / 6 м</td>
+						<td class="price">2100000 руб.</td>
+						<td class="favorite"><span class="add"></span></td>
+					</tr>
+					<tr>
+						<td class="photo"><img src="./pic/result1.jpg" width="53" height="40" alt=""></td>
+						<td class="area">Ленинский</td>
+						<td class="address">А.Петрова, 262</td>
+						<td class="rooms">4</td>
+						<td class="balcony">л/з</td>
+						<td class="floor">6 / 9</td>
+						<td class="walls">Панель</td>
+						<td class="layout">97 серия</td>
+						<td class="space">72 / 67 / 9 м<sup>2</sup></td>
+						<td class="price">3200000 руб.</td>
+						<td class="favorite"><span class="add"></span></td>
+					</tr>
+					<tr>
+						<td class="photo"><img src="./pic/result0.jpg" width="53" height="40" alt=""></td>
+						<td class="area">Железнодорожный</td>
+						<td class="address">С.Республик, 39а</td>
+						<td class="rooms">1</td>
+						<td class="balcony">6</td>
+						<td class="floor">5 / 12</td>
+						<td class="walls">Кирпич</td>
+						<td class="layout">Малосемейка</td>
+						<td class="space">35 / 30 / 6 м</td>
+						<td class="price">2100000 руб.</td>
+						<td class="favorite"><span class="add"></span></td>
+					</tr>
+					<tr>
+						<td class="photo"><img src="./pic/result1.jpg" width="53" height="40" alt=""></td>
+						<td class="area">Ленинский</td>
+						<td class="address">А.Петрова, 262</td>
+						<td class="rooms">4</td>
+						<td class="balcony">л/з</td>
+						<td class="floor">6 / 9</td>
+						<td class="walls">Панель</td>
+						<td class="layout">97 серия</td>
+						<td class="space">72 / 67 / 9 м<sup>2</sup></td>
+						<td class="price">3200000 руб.</td>
+						<td class="favorite"><span class="add"></span></td>
+					</tr>
+					<tr>
+						<td class="photo"><img src="./pic/result1.jpg" width="53" height="40" alt=""></td>
+						<td class="area">Железнодорожный</td>
+						<td class="address">С.Республик, 39а</td>
+						<td class="rooms">1</td>
+						<td class="balcony">6</td>
+						<td class="floor">5 / 12</td>
+						<td class="walls">Кирпич</td>
+						<td class="layout">Малосемейка</td>
+						<td class="space">35 / 30 / 6 м</td>
+						<td class="price">2100000 руб.</td>
+						<td class="favorite"><span class="add"></span></td>
+					</tr>
+					<tr>
+						<td class="photo"><img src="./pic/result1.jpg" width="53" height="40" alt=""></td>
+						<td class="area">Ленинский</td>
+						<td class="address">А.Петрова, 262</td>
+						<td class="rooms">4</td>
+						<td class="balcony">л/з</td>
+						<td class="floor">6 / 9</td>
+						<td class="walls">Панель</td>
+						<td class="layout">97 серия</td>
+						<td class="space">72 / 67 / 9 м<sup>2</sup></td>
+						<td class="price">3200000 руб.</td>
+						<td class="favorite"><span class="add"></span></td>
+					</tr>
+				</tbody>
+			</table>
+			<ul class="pages">
+				<li class="active"><a href="#">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">4</a></li>
+				<li><a href="#">5</a></li>
+				<li>..</li>
+				<li><a href="#">16</a></li>
+			</ul>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<div class="footer">
+		<div>
+			<p class="copy">© 2013 - 2014. ООО «АБН»</p>
+			<p class="author">Разработано в <a href="http://letsrock.pro" target="_blank">Let’s Rock</a></p>
+		</div>
+	</div>
+	<div class="fade"></div>
+	<div class="modal submit">
+		<h3>Подать объявление</h3>
+		<p>
+			<span>Выбрать категорию</span>
+			<select>
+				<option></option>
+				<option>Категория 1</option>
+				<option>Категория 2</option>
+			</select>
+		</p>
+		<p>
+			<span>Ваше имя</span>
+			<input type="text">
+		</p>
+		<p>
+			<span>Ваш контактный телефон</span>
+			<input type="text">
+		</p>
+		<button>Подать объявление</button>
+	</div>
+</body>
+</html>

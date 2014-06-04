@@ -53,4 +53,31 @@
 			$(this).attr('placeholder',$(this).data('holder'));
 		});
 	});
+	$('.modal').append('<span class="close"></span>');
+	$('.modal').each(function() {
+		var mh = ($(this).height()+36)/2;
+		$(this).css({'margin-top': -mh+'px'});
+	})
+	$('.header .publish').click(function() {
+		$('.modal.submit, .fade').fadeIn(250);
+		return false;
+	});
+	$('.apartment .description button').click(function() {
+		$('.modal.write, .fade').fadeIn(250);
+		return false;
+	});
+	$('.modal .close').click(function() {
+		$(this).parent().fadeOut(250);
+		$('.fade').fadeOut(250);
+		return false;
+	});
+	$('.fade').click(function() {
+		$('.fade, .modal').fadeOut(250);
+		return false;
+	});
+	$(this).keydown(function(eventObject){
+		if (eventObject.which == 27) {
+			$('.fade, .modal').fadeOut(250);
+		}
+	});
 });

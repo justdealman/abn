@@ -1259,7 +1259,7 @@ table.result .balcony {
 .footer .author {
 	position:absolute;
 	right:10px;
-	top:64px;
+	top:37px;
 }
 
 /* Carousel */
@@ -1451,4 +1451,109 @@ table.result .balcony {
 }
 .selectbox li:hover {
 	background:#f9f9f9;
+}
+
+/* Modal */
+
+.fade {
+	display:none;
+	position:fixed;
+	left:0;
+	top:0;
+	z-index:1010;
+	width:100%;
+	height:100%;
+	cursor:pointer;
+	background:url('../img/fade_bg.png') repeat;
+}
+.modal {
+	display:none;
+	position:fixed;
+	left:50%;
+	top:50%;
+	z-index:1020;
+	width:401px;
+	text-align:center;
+	padding:25px 39px 1px 40px;
+	margin-left:-245px;
+	background:#ffffff;
+	border:5px solid #d9dada;
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	border-radius:10px;
+	behavior:url('./pie.htc');
+}
+.modal .close {
+	position:absolute;
+	right:10px;
+	top:10px;
+	display:block;
+	width:12px;
+	height:12px;
+	cursor:pointer;
+	background:url('../img/modal_close.png') no-repeat left top;
+	opacity:0.75;
+	filter:opacity(75);
+}
+.modal h3 {
+	color:#000000;
+	font-size:24px;
+	line-height:28px;
+	font-family:'Segoe UI', sans-serif;
+	padding:0;
+	margin:0 0 35px;
+}
+.modal p {
+	color:#000000;
+	font-size:12px;
+	line-height:16px;
+	text-align:right;
+	margin:0 0 19px;
+}
+.modal p span:first-child {
+	float:left;
+	display:block;
+	max-width:180px;
+	padding:3px 0 2px;
+}
+.modal p input, .modal p textarea {
+	width:191px;
+	color:#000000;
+	font-size:12px;
+	padding:2px 4px;
+	background:#fbfbfb;
+	border:1px solid #203d3a;
+}
+.modal p textarea {
+	width:391px;
+	height:95px;
+	resize:none;
+	margin:9px 0 -24px;
+}
+.modal p .selectbox {
+	text-align:left;
+	margin-right:0;
+}
+.modal button {
+	position:relative;
+	display:inline-block;
+	color:#ffffff;
+	font-size:14px;
+	line-height:18px;
+	font-weight:300;
+	font-family:'Segoe UI', sans-serif;
+	text-transform:uppercase;
+	text-shadow:1px 1px 0 rgba(149,113,40,0.5);
+	cursor:pointer;
+	padding:5px 18px 5px 17px;
+	margin:21px 0 28px;
+	background:url('../img/filter_button.png') repeat-x top;
+	border:5px solid #ebeff0;
+	-webkit-border-radius:11px;
+	-moz-border-radius:11px;
+	border-radius:11px;
+	behavior:url('./pie.htc');
+}
+.modal button:hover {
+	background-position:0 -28px;
 }
